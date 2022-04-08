@@ -11,7 +11,7 @@ metadata:
   namespace: eks-local
 spec:
   rules:
-  - host: ad797f352d020450d98d64321a20b75b-56ab39089498edb3.elb.us-east-1.amazonaws.com
+  - host: alexs.cd-team.cf-cd.com
     http:
       paths:
       - backend:
