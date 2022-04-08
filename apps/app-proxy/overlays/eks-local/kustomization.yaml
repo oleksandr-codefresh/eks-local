@@ -4,7 +4,7 @@ configMapGenerator:
   literals:
   - argoWorkflowsInsecure=true
   - cfHost=http://alexs-platform.ngrok.io
-  - cors=http://alexs-platform.ngrok.io
+  - cors=http://alexs-platform.ngrok.io,http://local.codefresh.io
   - env=production
   - argoCdUrl=http://argocd-server:80
   - argoCdUsername=admin
