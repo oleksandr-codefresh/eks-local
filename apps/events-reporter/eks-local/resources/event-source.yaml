@@ -15,7 +15,7 @@ spec:
         name: argocd-token
       config: '{}'
       insecure: true
-      url: 8.tcp.ngrok.io:13137
+      url: 6.tcp.ngrok.io:14806
   template:
     container:
       name: ""
