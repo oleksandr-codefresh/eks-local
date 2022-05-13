@@ -3,6 +3,7 @@ configMapGenerator:
 - behavior: merge
   literals:
   - argoWorkflowsInsecure=true
+  - argoCdInsecure=true
   - cfHost=http://alexs-platform.ngrok.io
   - cors=http://alexs-platform.ngrok.io,http://local.codefresh.io
   - env=production
