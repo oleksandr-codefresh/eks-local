@@ -11,6 +11,10 @@ configMapGenerator:
         key: git_username
         name: autopilot-secret
   name: argocd-cm
+images:
+  - name: xeonalex/personal-argocd-dev
+    newName: xeonalex/personal-argocd-dev
+    newTag: vCR-11386
 kind: Kustomization
 namespace: eks-local
 resources:
