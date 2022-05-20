@@ -23,9 +23,9 @@ spec:
     path: bootstrap/argo-cd
     repoURL: https://github.com/oleksandr-codefresh/eks-local.git
   syncPolicy:
-    automated:
-      allowEmpty: true
-      prune: true
+#    automated:
+#      allowEmpty: true
+#      prune: true
 #      selfHeal: true
     syncOptions:
     - allowEmpty=true
