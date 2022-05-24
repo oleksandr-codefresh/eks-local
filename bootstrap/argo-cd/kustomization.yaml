@@ -18,6 +18,9 @@ patches:
       value:
         # name: PROCESS_NON_ROOT_APP
         value: "true"
+  target:
+    kind: Deployment
+    name: argocd-server
 kind: Kustomization
 namespace: eks-local
 resources:
