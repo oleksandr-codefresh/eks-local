@@ -11,6 +11,13 @@ configMapGenerator:
         key: git_username
         name: autopilot-secret
   name: argocd-cm
+patches:
+- patch: |-
+    - op: add
+      path: "/spec/template/spec/containers/0/env/-"
+      value:
+        # name: PROCESS_NON_ROOT_APP
+        value: "true"
 kind: Kustomization
 namespace: eks-local
 resources:
