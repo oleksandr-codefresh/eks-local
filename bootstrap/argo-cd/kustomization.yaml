@@ -16,7 +16,7 @@ patches:
     - op: add
       path: "/spec/template/spec/containers/0/env/-"
       value:
-        # name: PROCESS_NON_ROOT_APP
+        name: PROCESS_NON_ROOT_APP
         value: "true"
   target:
     kind: Deployment
