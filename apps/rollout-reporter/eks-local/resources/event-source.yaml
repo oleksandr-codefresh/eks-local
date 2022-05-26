@@ -17,6 +17,7 @@ spec:
       filter:
         createdBy: null
       group: argoproj.io
+      namespace: ""
       resource: analysisruns
       version: v1alpha1
     replicasets:
@@ -27,6 +28,7 @@ spec:
       filter:
         createdBy: null
       group: apps
+      namespace: ""
       resource: replicasets
       version: v1
     rollouts:
@@ -37,6 +39,7 @@ spec:
       filter:
         createdBy: null
       group: argoproj.io
+      namespace: ""
       resource: rollouts
       version: v1alpha1
   template:
