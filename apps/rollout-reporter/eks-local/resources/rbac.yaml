@@ -7,11 +7,10 @@ metadata:
 
 ---
 apiVersion: rbac.authorization.k8s.io/v1
-kind: Role
+kind: ClusterRole
 metadata:
   creationTimestamp: null
   name: rollout-reporter-sa
-  namespace: eks-local
 rules:
 - apiGroups:
   - '*'
@@ -22,14 +21,13 @@ rules:
 
 ---
 apiVersion: rbac.authorization.k8s.io/v1
-kind: RoleBinding
+kind: ClusterRoleBinding
 metadata:
   creationTimestamp: null
   name: rollout-reporter-sa
-  namespace: eks-local
 roleRef:
   apiGroup: ""
-  kind: Role
+  kind: ClusterRole
   name: rollout-reporter-sa
 subjects:
 - kind: ServiceAccount
