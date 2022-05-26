@@ -17,7 +17,6 @@ spec:
       filter:
         createdBy: null
       group: argoproj.io
-      namespace: eks-local
       resource: analysisruns
       version: v1alpha1
     replicasets:
@@ -28,7 +27,6 @@ spec:
       filter:
         createdBy: null
       group: apps
-      namespace: eks-local
       resource: replicasets
       version: v1
     rollouts:
@@ -39,7 +37,6 @@ spec:
       filter:
         createdBy: null
       group: argoproj.io
-      namespace: eks-local
       resource: rollouts
       version: v1alpha1
   template:
