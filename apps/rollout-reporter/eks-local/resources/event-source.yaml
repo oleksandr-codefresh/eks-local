@@ -17,7 +17,7 @@ spec:
       filter:
         createdBy: null
       group: argoproj.io
-      namespace: eks-local
+      namespace: metav1.NamespaceAll
       resource: analysisruns
       version: v1alpha1
     replicasets:
@@ -28,7 +28,7 @@ spec:
       filter:
         createdBy: null
       group: apps
-      namespace: eks-local
+      namespace: metav1.NamespaceAll
       resource: replicasets
       version: v1
     rollouts:
@@ -39,7 +39,7 @@ spec:
       filter:
         createdBy: null
       group: argoproj.io
-      namespace: eks-local
+      namespace: metav1.NamespaceAll
       resource: rollouts
       version: v1alpha1
   template:
