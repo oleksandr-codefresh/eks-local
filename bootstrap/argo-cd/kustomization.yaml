@@ -12,7 +12,7 @@ configMapGenerator:
         name: autopilot-secret
   name: argocd-cm
 images:
-- name: xeonalex/personal-argocd-dev
+- name: quay.io/codefresh/argocd
   newName: xeonalex/personal-argocd-dev
   newTag: 2.3.4-resource-revision-fix
 kind: Kustomization
