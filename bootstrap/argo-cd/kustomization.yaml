@@ -14,7 +14,7 @@ configMapGenerator:
 images:
 - name: quay.io/codefresh/argocd
   newName: xeonalex/personal-argocd-dev
-  newTag: 2.3.4-resource-history-id-merged
+  newTag: 2.3.4-history-commit-details
 kind: Kustomization
 namespace: eks-local
 resources:
