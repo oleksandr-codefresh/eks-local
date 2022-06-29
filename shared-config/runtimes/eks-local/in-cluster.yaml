@@ -13,7 +13,7 @@ spec:
   source:
     directory:
       include: >-
-        {all-runtimes-all-clusters/*.yaml,all-runtimes-all-clusters/**/*.yaml,runtimes/eks-local/*.yaml,runtimes/eks-local/**/*.yaml,control-planes/*.yaml,control-planes/**/*.yaml,dockerhub-xeonalex/integration.config.yaml,dockerhub-xeonalex/integration.secret.yaml}
+        {all-runtimes-all-clusters/*.yaml,all-runtimes-all-clusters/**/*.yaml,runtimes/eks-local/*.yaml,runtimes/eks-local/**/*.yaml,control-planes/*.yaml,control-planes/**/*.yaml}
       recurse: true
     path: shared-config/resources
     repoURL: https://github.com/oleksandr-codefresh/eks-local.git
