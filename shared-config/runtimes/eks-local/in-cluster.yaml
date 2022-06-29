@@ -3,7 +3,7 @@ kind: Application
 metadata:
   labels:
     codefresh.io/entity: internal-config
-    codefresh.io/internal: "true"
+    codefresh.io/internal: 'true'
   name: in-cluster
 spec:
   destination:
@@ -12,7 +12,8 @@ spec:
   project: default
   source:
     directory:
-      include: '{all-runtimes-all-clusters/*.yaml,all-runtimes-all-clusters/**/*.yaml,runtimes/eks-local/*.yaml,runtimes/eks-local/**/*.yaml,control-planes/*.yaml,control-planes/**/*.yaml}'
+      include: >-
+        {all-runtimes-all-clusters/*.yaml,all-runtimes-all-clusters/**/*.yaml,runtimes/eks-local/*.yaml,runtimes/eks-local/**/*.yaml,control-planes/*.yaml,control-planes/**/*.yaml,dockerhub-xeonalex/integration.config.yaml,dockerhub-xeonalex/integration.secret.yaml}
       recurse: true
     path: shared-config/resources
     repoURL: https://github.com/oleksandr-codefresh/eks-local.git
@@ -23,4 +24,4 @@ spec:
       prune: true
       selfHeal: true
     syncOptions:
-    - allowEmpty=true
+      - allowEmpty=true
