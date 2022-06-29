@@ -1,0 +1,15 @@
+{
+  "appName": "isc",
+  "userGivenName": "isc",
+  "destNamespace": "eks-local",
+  "destServer": "https://kubernetes.default.svc",
+  "srcPath": "shared-config/runtimes/eks-local",
+  "srcRepoURL": "https://github.com/oleksandr-codefresh/eks-local.git",
+  "srcTargetRevision": "",
+  "labels": {
+    "codefresh_io_entity": "git-source",
+    "codefresh_io_internal": "true"
+  },
+  "exclude": "",
+  "include": ""
+}
