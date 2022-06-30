@@ -13,7 +13,7 @@ spec:
   source:
     directory:
       include: >-
-        {all-runtimes-all-clusters/*.yaml,all-runtimes-all-clusters/**/*.yaml,runtimes/eks-local/*.yaml,runtimes/eks-local/**/*.yaml,control-planes/*.yaml,control-planes/**/*.yaml,test-16.18/integration.config.yaml,test-16.18/integration.secret.yaml}
+        {all-runtimes-all-clusters/*.yaml,all-runtimes-all-clusters/**/*.yaml,runtimes/eks-local/*.yaml,runtimes/eks-local/**/*.yaml,control-planes/*.yaml,control-planes/**/*.yaml}
       recurse: true
     path: shared-config/resources
     repoURL: https://github.com/oleksandr-codefresh/eks-local.git
