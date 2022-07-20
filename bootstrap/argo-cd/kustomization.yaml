@@ -18,4 +18,4 @@ images:
 kind: Kustomization
 namespace: eks-local
 resources:
-- github.com/codefresh-io/cli-v2/manifests/argo-cd?ref=v0.0.420
+- github.com/codefresh-io/cli-v2/manifests/argo-cd?ref=v0.0.440
