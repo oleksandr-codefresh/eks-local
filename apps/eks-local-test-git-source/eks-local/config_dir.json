@@ -1,0 +1,16 @@
+{
+  "appName": "eks-local-test-git-source",
+  "userGivenName": "eks-local-test-git-source",
+  "destNamespace": "eks-local",
+  "destServer": "https://kubernetes.default.svc",
+  "srcPath": "new-git-source",
+  "srcRepoURL": "https://github.com/oleksandr-codefresh/eks-local_git-source.git",
+  "srcTargetRevision": "main",
+  "labels": {
+    "codefresh_io_entity": "git-source",
+    "codefresh_io_internal": "false"
+  },
+  "annotations": null,
+  "exclude": "",
+  "include": ""
+}
